@@ -1,5 +1,5 @@
 # local-file-share-via-http
-This is a simple python script to start a http server and upload files or folder within a local network.
+This is a simple python script to start a http server and upload files or folder within a local network. No external libraries requried. If you have python installed you are good to go!
 
 
 ## How to use:
