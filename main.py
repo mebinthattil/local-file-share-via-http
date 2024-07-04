@@ -2,7 +2,7 @@
 import os, socket, shutil
 
 folder_path_to_zip = input("Enter the folder path to share: ").strip('"')
-shutil.make_archive("zipped","zip", root_dir = folder_path_to_zip)
+shutil.make_archive("shared_folder","zip", root_dir = folder_path_to_zip)
 
 def primary_ip():
     local_hostname = socket.gethostname()
