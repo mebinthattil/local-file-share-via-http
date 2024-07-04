@@ -9,6 +9,6 @@ def primary_ip():
     primary_ip = [ip for ip in socket.gethostbyname_ex(local_hostname)[2] if not ip.startswith("127.")][:1][0]
     return primary_ip
 
-print("\n\nLink to download:","http://"+primary_ip()+":8000/zipped.zip\nPress 'control+C' to end the sharing.\n\n\n")
+print("\n\nLink to download:","http://"+primary_ip()+":8000/shared_folder.zip\nPress 'control+C' to end the sharing.\n\n\n")
 os.system("python3 -m http.server -b {}".format(primary_ip()))
 os.remove("shared_folder.zip")
