@@ -11,4 +11,4 @@ def primary_ip():
 
 print("\n\nLink to download:","http://"+primary_ip()+":8000/zipped.zip\nPress 'control+C' to end the sharing.\n\n\n")
 os.system("python3 -m http.server -b {}".format(primary_ip()))
-os.remove("zipped.zip")
+os.remove("shared_folder.zip")
